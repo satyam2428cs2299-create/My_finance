@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #F5F8FC;
+    color: #17243A;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Light theme scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F5F8FC;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Light fintech card surface classes */
+.fintech-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E3EAF3;
+  border-radius: 0.875rem;
+  box-shadow: 0 1px 3px rgba(23, 36, 58, 0.04);
+}
+
+.fintech-card-subtle {
+  background-color: #F8FAFD;
+  border: 1px solid #E9EFF6;
+  border-radius: 0.75rem;
+}
+
+/* Financial indicator pills */
+.badge-positive {
+  background-color: #E8F7EF;
+  color: #065F46;
+  border: 1px solid #C6EED7;
+}
+
+.badge-warning {
+  background-color: #FFF4D6;
+  color: #92400E;
+  border: 1px solid #FDE68A;
+}
+
+.badge-negative {
+  background-color: #FDECEC;
+  color: #991B1B;
+  border: 1px solid #FCA5A5;
+}
+
+.badge-neutral {
+  background-color: #EFF6FF;
+  color: #1E40AF;
+  border: 1px solid #DBEAFE;
+}

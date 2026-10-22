@@ -1,0 +1,8 @@
+{
+  "name": "AI Finance Advisor 4.0",
+  "description": "Intelligent personal financial planning, mathematical modeling, portfolio allocation, and AI-powered investment advisory.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

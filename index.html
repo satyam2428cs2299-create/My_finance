@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Finance Advisor 4.0</title>
+    <meta name="description" content="Intelligent personal financial planning, mathematical modeling, portfolio allocation, and investment advisory." />
+    <meta property="og:title" content="AI Finance Advisor 4.0" />
+    <meta property="og:description" content="Intelligent personal financial planning, mathematical modeling, portfolio allocation, and investment advisory." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+      // Suppress benign Vite dev WebSocket / HMR module runner connection errors in cloud iframe
+      window.addEventListener('error', function(event) {
+        var msg = event.message || '';
+        var filename = event.filename || '';
+        if (
+          msg.includes('WebSocket') ||
+          filename.includes('@vite/client') ||
+          (event.error && event.error.stack && event.error.stack.includes('@vite/client'))
+        ) {
+          event.stopImmediatePropagation();
+          event.preventDefault();
+          return true;
+        }
+      }, true);
+      window.addEventListener('unhandledrejection', function(event) {
+        var reason = event.reason;
+        var str = typeof reason === 'string' ? reason : (reason && (reason.message || reason.stack)) || '';
+        if (str.includes('WebSocket') || str.includes('@vite/client') || str.includes('createWebSocketModuleRunnerTransport')) {
+          event.stopImmediatePropagation();
+          event.preventDefault();
+        }
+      }, true);
+    </script>
+  </head>
+  <body class="bg-[#F5F8FC] text-[#17243A] antialiased selection:bg-[#3478F6] selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
